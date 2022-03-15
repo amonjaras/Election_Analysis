@@ -41,3 +41,18 @@ print("3**(3%5) =",3**(3%5),'\n')
 print("5+(9*3/2-4) =",5+(9*3/2-4), "vs 5+(9*3/(2-4)) =",5+(9*3/(2-4)),'\n')
 
 #3.2.5 Lists
+counties=["Arapahoe","Denver","Jefferson"]
+print("Participant couties: ",counties,'\n')
+
+#indexing
+print("First Item uisng counties[0]:",counties[0])
+print("using counties[2]:",counties[2],'\n')
+
+#negative indexing
+print("fining the last item with counties[-1]:",counties[-1],'\n')
+
+#lenght of a list
+print("total of counties in the list:",len(counties),'\n')
+
+#slice lists
+print("finding first and second items",counties[0:2],'\n')
