@@ -1,5 +1,6 @@
 #3.2.2 Execute Python files
 print("Hello World\n")
+print("----------------------",'\n')
 
 #3.2.3 Data Types
 #integer
@@ -40,6 +41,8 @@ print("16-3/(2+7)-1 =",16-3/(2+7)-1)
 print("3**(3%5) =",3**(3%5),'\n')
 print("5+(9*3/2-4) =",5+(9*3/2-4), "vs 5+(9*3/(2-4)) =",5+(9*3/(2-4)),'\n')
 
+print("----------------------",'\n')
+
 #3.2.5 Lists
 counties=["Arapahoe","Denver","Jefferson"]
 print("Participant couties: ",counties,'\n')
@@ -56,3 +59,81 @@ print("total of counties in the list:",len(counties),'\n')
 
 #slice lists
 print("finding first and second items",counties[0:2],'\n')
+
+#add items to alist
+counties.append("El Paso")
+print("Participant counties: ", counties,'\n')
+
+#insert items to a list
+counties.insert(2,"El Paso")
+print("Countie duplicated while inserting: ",counties,'\n')
+
+#removing items using .remove
+counties.remove("El Paso")
+print("Countie list after removal: ",counties,'\n')
+
+#removing items using pop()
+counties.pop(3)
+print("Counties list after pop: ",counties,'\n')
+
+#changing an element in a list
+counties[2] = "El Paso"
+print("Changing countie list: ",counties,'\n')
+
+#Exercise performed on the original list
+#going back to the original
+counties[2] = "Jefferson"
+print("Originla counties list: ",counties)
+#inserting El Paso to second position
+counties.insert(1,"El Paso")
+print("Countie added on second position: ",counties)
+#removing Arapahoe
+counties.pop(0)
+print("Removing Arapahoe from the list: ",counties)
+#Denver on third and keeping Jefferson
+counties.append("Denver")
+counties.remove("Denver")
+print("swapping counties order: ",counties)
+#adding Arapahoe
+counties.append("Arapahoe")
+print("Final counties list for this exersice: ",counties,'\n')
+
+print("----------------------",'\n')
+
+#3.2.6 Tuples: once created can not be changed
+counties_tuple = ("Arapahoe","Denver","Jefferson")
+print("Counties list using Tuple: ",counties_tuple,'\n')
+#lenght of tuple
+print("lenght of tuple list: ",len(counties_tuple),'\n')
+#Getting items
+print("Getting item after 1: ",counties_tuple[1],'\n')
+#Getting Arapahoe and Denver
+print("Getting items 1 and 2: ",counties_tuple[:2],'\n')
+
+print("----------------------",'\n')
+
+#3.2.7 Dictionaries
+#creating a dictionary
+counties_dict={}
+counties_dict["Arapahoe"]=422829
+counties_dict["Denver"]=463353
+counties_dict["Jefferson"]=432438
+print(counties_dict,'\n')
+
+#lenght of dictionary
+print(len(counties_dict),'\n')
+
+#getting all keys and values
+print(counties_dict.items(),'\n')
+
+#getting all keys
+print(counties_dict.keys(),'\n')
+
+#getting all values
+print(counties_dict.values(),'\n')
+
+#getting specific value
+print(counties_dict.get("Denver"),'\n')
+
+#list of dictionaries
+voting_data = []
