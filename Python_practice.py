@@ -1,3 +1,4 @@
+"""
 #3.2.2 Execute Python files
 print("Hello World\n")
 print("----------------------",'\n')
@@ -42,7 +43,7 @@ print("3**(3%5) =",3**(3%5),'\n')
 print("5+(9*3/2-4) =",5+(9*3/2-4), "vs 5+(9*3/(2-4)) =",5+(9*3/(2-4)),'\n')
 
 print("----------------------",'\n')
-
+"""
 #3.2.5 Lists
 counties=["Arapahoe","Denver","Jefferson"]
 print("Participant couties: ",counties,'\n')
@@ -168,6 +169,126 @@ print("----------------------",'\n')
 counties=["Arapahoe","Denver","Jefferson"]
 if counties[1] == 'Denver':
     print(counties[1],'\n')
-
+"""
 if counties[3] != 'Jefferson':
     print(counties[2],'\n') #Error because the list index is out of range
+"""
+"""
+#If-Else statements
+temperature = int(input("what is the temperature outside? "))
+if temperature > 80:
+    print("Turn on the AC.",'\n')
+else:
+    print("Open the windows",'\n')
+
+#Nested If-Else
+#what is the score?
+score = int(input("What is your test score? "))
+#determine the grade
+if score >=90:
+    print('your grade is an A')
+else:
+    if score >= 80:
+        print('your grade is a B')
+    else:
+        if score >= 70:
+            print('your grade is a C')
+        else:
+            if score >= 60:
+                print('your grade is a D')
+            else:
+                print('your grade is an F','\n')
+
+#using if-elif-else instead
+#What is your score?
+score = int(input("what is your test score? "))
+
+#determine the grade
+if score >= 90:
+    print('your grade is an A','\n')
+elif score >= 80:
+    print('your grade is a B','\n')
+elif score >= 70:
+    print('your grade is a C','\n')
+elif score >= 60:
+    print('your grade is a D','\n')
+else:
+    print('your grade is an F','\n')
+
+print("----------------------",'\n')
+"""
+
+#3.2.9 membership and logical operators
+#Membership
+counties = ["Arapahoe","Denver","Jefferson"]
+if "El Paso" in counties:
+    print("El Paso is in the list of counties",'\n')
+else:
+    print("El Paso is not in the list of counties",'\n')
+
+#Logical operators
+#AND
+if "Arapahoe" in counties and "El Paso" in counties:
+    print("Arapahoe and El Paso are in the list of counties",'\n')
+else:
+    print("Arapahoe or El Paso is not in the list of counties",'\n')
+#OR
+if "Arapahoe" in counties or "El Paso" in counties:
+    print("Arapahoe or El Paso is in the list of counties",'\n')
+else:
+    print("Arapahoe and El Paso are not in the list of counties",'\n')
+#NOT
+if "Arapahoe" in counties and "El Paso" not in counties:
+    print("Only Arapahoe is in the list of counties",'\n')
+else:
+    print("Arapahoe is in the list of counties and El Paso is not in the list of counties",'\n')
+
+print("----------------------",'\n')
+
+#3.2.10 Repetition of statements
+#While
+"""
+x=0
+while x <= 5:
+    print(x,'\n')
+    x = x + 1
+
+count = 7
+while count < 1:
+    print("Hello World",'\n')
+"""
+
+#For loops
+for county in counties:
+    print(county,'\n')
+
+for i in range(len(counties)):
+    print(counties[i],'\n')
+
+"""
+##Exercise
+counties_tuple = ("Arapahoe", "Denver", "Jefferson")
+#Exercise A
+for i in range(len(counties_tuple)):
+    print("Option A: ",counties_tuple[i],'\n')
+
+#Exercise B
+#for i in len(counties_tuple):
+    #print(counties_tuple[i],'\n') #TypeError: 'int' object is not iterable
+
+#Exercise C
+for county in counties_tuple:
+    print("Option C: ",county, '\n')
+
+#Exercise D
+for county in counties_tuple:
+    print("Option D: ",counties,'\n')
+"""
+
+#Iterate through a dictionary
+for county in counties_dict:
+    print(county,'\n')
+
+for county in counties_dict.keys():
+    print(county,'\n')
+    
