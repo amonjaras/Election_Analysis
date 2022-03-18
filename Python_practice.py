@@ -291,4 +291,80 @@ for county in counties_dict:
 
 for county in counties_dict.keys():
     print(county,'\n')
-    
+
+#Getting values of a dictionary
+for voters in counties_dict.values():
+    print(voters,'\n')
+for county in counties_dict:
+    print(counties_dict[county],'\n')
+for county in counties_dict:
+    print(counties_dict.get(county),'\n')
+
+#Getting key-value pairs of a dictionary
+for county, voters in counties_dict.items():
+    print(county, voters)
+
+#Print each county and registered voter from the counties dictionary
+for county, voters in counties_dict.items():
+    print(county, "county has ", voters, "registered voters.")
+
+#get each dictionary in a list of dictionaries
+for county_dict in voting_data:
+    print(county_dict,'\n')
+
+for i in range(len(voting_data)):
+    print(voting_data[i]['county'],'\n')
+
+#get the values from a list of dictionaries
+for county_dict in voting_data:
+    for value in county_dict.values():
+        print(value)
+print('\n')
+#How would you retrieve the number of registered voters from each dictionary?
+#Option A
+print("Option A")
+for county_dict in voting_data:
+    print(counties_dict.values())
+print('\n')
+#Option B
+print("Option B")
+for county_dict in voting_data:
+    for value in county_dict:
+        print(value) # esta opcion no es
+print('\n')
+#Option C
+print("Option C")
+for county_dict in voting_data:
+    print(county_dict['registered_voters']) #Esta es la opcion correcta
+print('\n')
+#Option D
+print("Option D")
+for county_dict in voting_data:
+    for key in county_dict.items():
+        print(value)
+print('\n')
+#Print the county name for each dictionary
+for county_dict in voting_data:
+    print(county_dict['county'])
+print('\n')
+
+#3.2.11 Printing formats
+#this is the ORIGINAL code
+my_votes = int(input("How many votes did you get in the election? "))
+total_votes = int(input("What is the total votes in the election? "))
+percentage_votes = (my_votes / total_votes) * 100
+print("I received " + str(percentage_votes)+"% of the total votes.")
+print('\n')
+
+#using F-strings with strings
+my_votes = int(input("How many votes did you get in the election? "))
+total_votes = int(input("What is the total votes in the election? "))
+print(f"I received {my_votes / total_votes * 100}% of the total votes.")
+print('\n')
+
+#using F-strings with dictionaries
+#using concatenation
+counties_dict = {"Arapahoe": 369237, "Denver":413229, "Jefferson": 390222}
+for county, voters in counties_dict.items():
+    print(county + " county has " + str(voters) + " registered voters.")
+print('\n')
