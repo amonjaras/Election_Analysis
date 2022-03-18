@@ -157,9 +157,17 @@ print("----------------------",'\n')
 
 #3.2.8 Decision statements
 # How many votes did you get?
-my_votes = int(input("How many votes did you get in the election? "))
+#my_votes = int(input("How many votes did you get in the election? "))
 #  Total votes in the election
-total_votes = int(input("What is the total votes in the election? "))
+#total_votes = int(input("What is the total votes in the election? "))
 # Calculate the percentage of votes you received.
-percentage_votes = (my_votes / total_votes) * 100
-print("I received " + str(percentage_votes)+"% of the total votes.")
+#percentage_votes = (my_votes / total_votes) * 100
+#print("I received " + str(percentage_votes)+"% of the total votes.",'\n')
+
+#using if
+counties=["Arapahoe","Denver","Jefferson"]
+if counties[1] == 'Denver':
+    print(counties[1],'\n')
+
+if counties[3] != 'Jefferson':
+    print(counties[2],'\n') #Error because the list index is out of range
