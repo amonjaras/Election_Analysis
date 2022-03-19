@@ -407,3 +407,13 @@ print('\n')
 print("----------------------",'\n')
 
 #3.3.1 Import and inspect the data
+#csv file added to Election_Analisys/Resources
+
+#3.3.2 Overview of the project
+    #->Total number of votes cast
+    #->Complete list of candidates who received votes
+    #->Total number fo votes each candidate received
+    #->The winner of the election based on popular vote
+
+#3.3.3 Pseudocoding
+    #creation of PuPoll.py file
