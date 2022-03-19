@@ -417,3 +417,43 @@ print("----------------------",'\n')
 
 #3.3.3 Pseudocoding
     #creation of PuPoll.py file
+
+#3.4.1 Python Dependencies Modules and Packages
+# Dependencies
+"""
+# import the datetime class from the datetime module
+import datetime
+# use the now() attribute on datetime class to get the present time
+now =datetime.datetime.now()
+# print the present time
+print("the time right now is  ", now)
+"""
+#another way is using "dt" as datetime module
+# Import the datetime class from the datetime module.
+import datetime as dt
+# Use the now() attribute on the datetime class to get the present time.
+now = dt.datetime.now()
+# Print the present time.
+print("The time right now is ", now)
+print('\n')
+
+#Packages are folders that contain a set of Python modules. Use "import" statement
+#Modules are a separate software component <extention> (ie .py for python)
+#importing csv module
+import csv
+print(dir(csv))
+
+#3.4.2 Open and read files using Python
+#Open a File
+# file_variable = open(filename, mode)
+# mode could be:
+    # 'r: Open file to read',
+    # 'w: Open a file to write to it',
+    # 'x: open a file for exclusive creation',
+    # 'a: open a file to append data to an existing file',
+    # '+: open a file for reading and writing'
+
+#Read Data
+#done on PyPoll file
+
+
