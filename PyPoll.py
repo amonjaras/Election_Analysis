@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-"""PyPoll.py: Election Audit of local election"""
-import requests
-
-
 # Modules
 import os
 import csv
