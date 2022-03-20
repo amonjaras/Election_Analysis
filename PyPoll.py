@@ -1,10 +1,7 @@
-# The data we need to retreive
-# 1. The total number of voters cast
-# 2. A complete list of candidates who receive votes
-# 3. The percentage of votes each candidate won
-# 4. The total number of votes each candidate won
-# 5. The winner of the election based on popular vote
-# -----------------------
+#!/usr/bin/env python
+"""PyPoll.py: Election Audit of local election"""
+import requests
+
 
 # Modules
 import os
@@ -99,28 +96,3 @@ with open(txtcreate, "w") as txt_file:
 
     # Save the winning candidate results to txt file
     txt_file.write(winning_candidate_summary)
-        
-
-
-    # Print the file object
-    #print(election_data)
-
-
-"""
-# Using the open() function to open the file as a text file
-outfile = open(txtcreate,"w")
-
-# write some data to the file
-#outfile.write("Hello World")
-
-# write three countries to the file
-#outfile.write("Arapahoe \nDenver\nJefferson")
-
-# skill Drill
-outfile.write("Counties in the election \n-----------------------\nArapahoe\nDenver\nJefferson")
-
-
-# Close the file
-outfile.close()
-
-"""
