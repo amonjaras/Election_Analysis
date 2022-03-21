@@ -1,6 +1,15 @@
+#!/usr/bin/env python
 # Modules
-import os
+import os, sys
+import requests
 import csv
+
+print(sys.version)
+
+__author__      = "Audrey Monjaras"
+__credits__     = "Audrey Monjaras"
+__version__     = "1.0.0"
+__status__      = "Development"
 
 # Assign a variable for the file to load and the path
 csvpath = os.path.join("Resources", "election_results.csv")
