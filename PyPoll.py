@@ -15,7 +15,7 @@ __status__      = "Development"
 csvpath = os.path.join("Resources", "election_results.csv")
 
 # Assign a variable to save the file to a path
-txtcreate = os.path.join("analysis", "election_analysis.txt")
+txtcreate = os.path.join("analysis", "election_analysis_practice.txt")
 
 # Initialize a total vote counter
 total_votes = 0
