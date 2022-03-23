@@ -73,7 +73,7 @@ with open(file_to_load) as election_data:
             county_votes[county_name] = 0
 
         # 5: Add a vote to that county's vote count.
-        county_votes[county_name} += 1
+        county_votes[county_name] += 1
 
 
 # Save the results to our text file.
