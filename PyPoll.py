@@ -1,10 +1,9 @@
 #!/usr/bin/env python
 # Modules
 import os, sys
+from wsgiref.simple_server import sys_version
 import requests
 import csv
-
-print(sys.version)
 
 __author__      = "Audrey Monjaras"
 __credits__     = "Audrey Monjaras"
@@ -100,3 +99,16 @@ with open(txtcreate, "w") as txt_file:
 
     # Save the winning candidate results to txt file
     txt_file.write(winning_candidate_summary)
+
+CYELLOW = '\33[33m'
+CEND = '\33[0m'
+
+authorship_info = (
+    f'****************************************\n'
+    f'* User current version: {sys_version}  *\n'
+    f'* Author: {__author__}              *\n'
+    f'* Credits: {__credits__}             *\n'
+    f'* Version: {__version__}                       *\n'
+    f'* Status: {CYELLOW}{__status__}{CEND}                  *\n'
+    f'****************************************\n'    )
+print(authorship_info)

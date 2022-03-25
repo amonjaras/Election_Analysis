@@ -3,6 +3,7 @@
 
 # Add our dependencies.
 import os, sys
+from wsgiref.simple_server import sys_version
 import requests
 import csv
 
@@ -158,3 +159,17 @@ with open(file_to_save, "w") as txt_file:
 
     # Save the winning candidate's name to the text file
     txt_file.write(winning_candidate_summary)
+
+
+CGREEN = '\33[32m'
+CEND = '\33[0m'
+
+authorship_info = (
+    f'****************************************\n'
+    f'* User current version: {sys_version}  *\n'
+    f'* Author: {__author__}              *\n'
+    f'* Credits: {__credits__}             *\n'
+    f'* Version: {__version__}                       *\n'
+    f'* Status: {CGREEN}{__status__}{CEND}                  *\n'
+    f'****************************************\n'    )
+print(authorship_info)
