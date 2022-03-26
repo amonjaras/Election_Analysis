@@ -2,7 +2,7 @@
 
 ## **INDEX**
 
-            [1. Overview of the Election Audit](#Overview)
+            [1. Overview of the Election Audit](https://github.com/amonjaras/Election_Analysis/blob/main/PyPoll_Challenge.md#1-overview-of-election-audit)
 
             [2. Resources](#Resources)
 
@@ -21,7 +21,7 @@ A Colorado Board of Elections employee has given the following tasks to complete
     3. The county with the highest turnout
 
 ## **2. Resources**
-    - Data Source: [Election Results](/blob/main/Election_Analysis/Resources/election_results.csv)
+    - Data Source: [Election Results](../blob/main/Election_Analysis/Resources/election_results.csv)
     - Software: Python 3.9.7, Visual Studion Code 1.65.2
 
 ## **3. Election Audit Results**
