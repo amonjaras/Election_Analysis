@@ -93,7 +93,7 @@ with open(file_to_save, "w") as txt_file:
         f"-------------------------\n"
         f"Total Votes: {total_votes:,}\n"
         f"-------------------------\n\n"
-        f"County Votes:\n"  )
+        f"County Votes:\n\n"  )
     print(election_results, end="")
 
     txt_file.write(election_results)
@@ -170,6 +170,6 @@ authorship_info = (
     f'* Author: {__author__}              *\n'
     f'* Credits: {__credits__}             *\n'
     f'* Version: {__version__}                       *\n'
-    f'* Status: {CGREEN}{__status__}{CEND}                  *\n'
+    f'* Status: {CGREEN}{__status__}{CEND}                   *\n'
     f'****************************************\n'    )
 print(authorship_info)
