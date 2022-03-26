@@ -2,13 +2,13 @@
 
 ## **INDEX**
 
-            [1. Overview of the Election Audit](https://github.com/amonjaras/Election_Analysis/blob/main/PyPoll_Challenge.md#1-overview-of-election-audit)
+[1. Overview of the Election Audit](#1-overview-of-election-audit)
 
-            [2. Resources](#Resources)
+[2. Resources](#Resources)
 
-            [3. Election Audit Results](#Results)
+[3. Election Audit Results](#Results)
 
-            [4. Summary](#Summary)
+[4. Summary](#Summary)
 
 
 
@@ -16,15 +16,21 @@
 The Audit performed for the Colorado Board of Elections was successfull. For this Project, the election commision requested to add additional data to complete the Audit.
 A Colorado Board of Elections employee has given the following tasks to complete the election audit of a recent local congressional election.
 
-    1. The voter turnout for each county
-    2. The percentage of votes from each county out of the total count
-    3. The county with the highest turnout
+1. The voter turnout for each county
+2. The percentage of votes from each county out of the total count
+3. The county with the highest turnout
 
 ## **2. Resources**
-    - Data Source: [Election Results](../blob/main/Election_Analysis/Resources/election_results.csv)
-    - Software: Python 3.9.7, Visual Studion Code 1.65.2
+- Data Source: [Election Results](../blob/main/Election_Analysis/Resources/election_results.csv)
+
+- Software: Python 3.9.7, Visual Studion Code 1.65.2
 
 ## **3. Election Audit Results**
+The Election results show the following:
+
+- Total of votes cast in this congressional election
+
+
 
 ## **Summary**
 The analysis of the election show that:
