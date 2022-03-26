@@ -76,6 +76,8 @@ The Election results show the following:
 - The winner of the election was:
  - Candidate (**Diana DeGette**), who received "**73.8%**" of the vote and "**272,892**" number of votes.
 
+- Printed results can be found in [Election Analysis](https://github.com/amonjaras/Election_Analysis/blob/main/analysis/election_analysis.txt)
+
 ### 3.1 Code used to determine the votes per county
 
 <details><summary><b>The code used to obtain the information is as follows:</b></summary>
